@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="34" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2019-07-30" time="18:29:14">
+  <environment user="appveyor" machine-name="APPVYR-WIN" cwd="C:\projects\oh-my-posh" user-domain="APPVYR-WIN" platform="Microsoft Windows Server 2016 Datacenter|C:\Windows|\Device\Harddisk0\Partition4" nunit-version="2.5.8.0" os-version="10.0.14393" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Powershell" name="Pester" executed="True" result="Success" success="True" time="4.5148" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="Test-GetBranchSymbol" executed="True" result="Success" success="True" time="2.613" asserts="0" description="Test-GetBranchSymbol">
+        <results>
+          <test-case description="Has Enabled set to False" name="Test-GetBranchSymbol.Has Enabled set to False" time="2.0114" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has has no upstream" name="Test-GetBranchSymbol.Has has no upstream" time="0.1506" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Uses GitHub" name="Test-GetBranchSymbol.Uses GitHub" time="0.2742" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Uses GitLab" name="Test-GetBranchSymbol.Uses GitLab" time="0.0572" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Uses BitBucket" name="Test-GetBranchSymbol.Uses BitBucket" time="0.0671" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Uses something else" name="Test-GetBranchSymbol.Uses something else" time="0.0338" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has no remote" name="Test-GetBranchSymbol.Has no remote" time="0.0187" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Test-IsVanillaWindow" executed="True" result="Success" success="True" time="0.5657" asserts="0" description="Test-IsVanillaWindow">
+        <results>
+          <test-case description="runs in ConEmu and outputs 'false'" name="Test-IsVanillaWindow.runs in ConEmu and outputs 'false'" time="0.2505" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in ConEmu and outputs 'false'" name="Test-IsVanillaWindow.runs in ConEmu and outputs 'false'" time="0.0484" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in an ANSI supported terminal and outputs 'false'" name="Test-IsVanillaWindow.runs in an ANSI supported terminal and outputs 'false'" time="0.0594" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in ConEmu and outputs 'false'" name="Test-IsVanillaWindow.runs in ConEmu and outputs 'false'" time="0.0302" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in cmder and outputs 'false'" name="Test-IsVanillaWindow.runs in cmder and outputs 'false'" time="0.0233" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in cmder and conemu and outputs 'false'" name="Test-IsVanillaWindow.runs in cmder and conemu and outputs 'false'" time="0.0244" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in Hyper.js and outputs 'false'" name="Test-IsVanillaWindow.runs in Hyper.js and outputs 'false'" time="0.0335" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in vscode and outputs 'false'" name="Test-IsVanillaWindow.runs in vscode and outputs 'false'" time="0.0513" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="runs in a vanilla window and outputs 'true'" name="Test-IsVanillaWindow.runs in a vanilla window and outputs 'true'" time="0.0448" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-Home" executed="True" result="Success" success="True" time="0.089" asserts="0" description="Get-Home">
+        <results>
+          <test-case description="returns C:\Users\appveyor" name="Get-Home.returns C:\Users\appveyor" time="0.089" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-Provider" executed="True" result="Success" success="True" time="0.3054" asserts="0" description="Get-Provider">
+        <results>
+          <test-case description="uses the provider 'AwesomeSauce'" name="Get-Provider.uses the provider 'AwesomeSauce'" time="0.3054" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-Drive" executed="True" result="Success" success="True" time="0.372" asserts="0" description="Get-Drive">
+        <results>
+          <test-case description="is in the C:\Users\appveyor folder" name="Get-Drive.is in the C:\Users\appveyor folder" time="0.0741" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is somewhere in the C:\Users\appveyor folder" name="Get-Drive.is somewhere in the C:\Users\appveyor folder" time="0.0415" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is in 'Microsoft.PowerShell.Core\FileSystem::\\Test\Hello' with provider X:" name="Get-Drive.is in 'Microsoft.PowerShell.Core\FileSystem::\\Test\Hello' with provider X:" time="0.0462" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is in C:" name="Get-Drive.is in C:" time="0.0237" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is has no drive" name="Get-Drive.is has no drive" time="0.0359" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="is has no valid path" name="Get-Drive.is has no valid path" time="0.0387" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="running outside of the Filesystem in L:" name="Get-Drive.running outside of the Filesystem in L:" time="0.1118" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Test-NotDefaultUser" executed="True" result="Success" success="True" time="0.5697" asserts="0" description="Test-NotDefaultUser">
+        <results>
+          <test-case description="same username gives 'false'" name="Test-NotDefaultUser.same username gives 'false'" time="0.0568" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="different username gives 'false'" name="Test-NotDefaultUser.different username gives 'false'" time="0.0113" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="same username and outside VirtualEnv gives 'false'" name="Test-NotDefaultUser.same username and outside VirtualEnv gives 'false'" time="0.0274" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="same username and inside VirtualEnv same default user gives 'false'" name="Test-NotDefaultUser.same username and inside VirtualEnv same default user gives 'false'" time="0.0287" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="different username and inside VirtualEnv same default user gives 'true'" name="Test-NotDefaultUser.different username and inside VirtualEnv same default user gives 'true'" time="0.0225" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="no username gives 'true'" name="Test-NotDefaultUser.no username gives 'true'" time="0.0422" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="different username gives 'true'" name="Test-NotDefaultUser.different username gives 'true'" time="0.0135" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="different username and outside VirtualEnv gives 'true'" name="Test-NotDefaultUser.different username and outside VirtualEnv gives 'true'" time="0.0193" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="no username and inside VirtualEnv gives 'true'" name="Test-NotDefaultUser.no username and inside VirtualEnv gives 'true'" time="0.348" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
